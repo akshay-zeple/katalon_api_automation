@@ -21,3 +21,7 @@ response = WS.sendRequestAndVerify(findTestObject('CalculatorSoapService/Additio
 
 WS.verifyElementPropertyValue(response, 'AddResponse.AddResult', '12')
 
+WS.verifyElementText(response, 'AddResponse.AddResult', '12')
+
+WS.verifyResponseStatusCode(response, 200)
+

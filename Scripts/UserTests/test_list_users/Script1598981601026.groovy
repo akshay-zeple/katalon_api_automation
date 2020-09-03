@@ -21,3 +21,8 @@ response = WS.sendRequestAndVerify(findTestObject('UserRestService/ListUsers'))
 
 WS.verifyElementPropertyValue(response, 'data[2].first_name', 'Tobias')
 
+WS.verifyElementsCount(response, 'data', 6)
+
+WS.verifyResponseStatusCodeInRange(response, 100, 200)
+
+
