@@ -15,13 +15,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WS.sendRequest(findTestObject('UserRestService/ListUsers'))
+WS.sendRequestAndVerify(findTestObject('UserRestService/CreateUser'), FailureHandling.CONTINUE_ON_FAILURE)
 
-response = WS.sendRequestAndVerify(findTestObject('UserRestService/ListUsers'), FailureHandling.STOP_ON_FAILURE)
+WS.sendRequestAndVerify(findTestObject('UserRestService/GetUserDetails'))
 
-WS.verifyElementPropertyValue(response, 'data[2].first_name', 'Tobias')
+WS.sendRequestAndVerify(findTestObject('UserRestService/UpdateUserDetails'))
 
-WS.verifyElementsCount(response, 'data', 6)
-
-WS.verifyResponseStatusCodeInRange(response, 100, 200)
+WS.sendRequestAndVerify(findTestObject('UserRestService/DeleteUser'))
 
