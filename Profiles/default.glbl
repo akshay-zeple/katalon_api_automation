@@ -9,4 +9,9 @@
       <initValue>'IN'</initValue>
       <name>countryISOCode</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Alex'</initValue>
+      <name>userName</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

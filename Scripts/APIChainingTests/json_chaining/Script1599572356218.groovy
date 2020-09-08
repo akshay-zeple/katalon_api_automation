@@ -15,11 +15,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WS.sendRequestAndVerify(findTestObject('UserRestService/CreateUser'), FailureHandling.CONTINUE_ON_FAILURE)
+res1 = WS.sendRequest(findTestObject('UserRestService/ListUsers'))
 
-WS.sendRequestAndVerify(findTestObject('UserRestService/ListUsers'))
+def obj = new groovy.json.JsonSlurper()
 
-WS.sendRequestAndVerify(findTestObject('UserRestService/UpdateUserDetails'))
+def jsonData = obj.parseText(res1.responseBodyContent)
 
-WS.sendRequestAndVerify(findTestObject('UserRestService/DeleteUser'))
+def username = jsonData.data[0].first_name
+
+println('Extracted User Name - ' + username)
+
+GlobalVariable.userName = username
+
+res2 = WS.sendRequestAndVerify(findTestObject('UserRestService/UpdateUserDetails', [('userName') : GlobalVariable.userName]))
 
