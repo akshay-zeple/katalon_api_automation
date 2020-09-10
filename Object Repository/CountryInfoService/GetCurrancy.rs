@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>GetCapital</name>
+   <name>GetCurrancy</name>
    <tag></tag>
-   <elementGuidId>2ee7af25-7eb6-485b-9910-2928c2e5f987</elementGuidId>
+   <elementGuidId>7e55833f-a015-454c-aecf-4de85a80aa50</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
@@ -17,23 +17,23 @@
    <serviceType>SOAP</serviceType>
    <soapBody>&lt;Envelope xmlns=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;>
     &lt;Body>
-        &lt;CapitalCity xmlns=&quot;http://www.oorsprong.org/websamples.countryinfo&quot;>
-            &lt;sCountryISOCode>${countryISOCode}&lt;/sCountryISOCode>
-        &lt;/CapitalCity>
+        &lt;CountryCurrency xmlns=&quot;http://www.oorsprong.org/websamples.countryinfo&quot;>
+            &lt;sCountryISOCode>${CountryISOCode}&lt;/sCountryISOCode>
+        &lt;/CountryCurrency>
     &lt;/Body>
 &lt;/Envelope></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod>SOAP</soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
-   <soapServiceFunction>CapitalCity</soapServiceFunction>
+   <soapServiceFunction>CountryCurrency</soapServiceFunction>
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
       <defaultValue>'VN'</defaultValue>
       <description></description>
-      <id>e21d3b78-11e7-4866-b3a6-ddaa2a144314</id>
+      <id>903e256c-654f-4171-8322-02d8c2fb24ce</id>
       <masked>false</masked>
-      <name>countryISOCode</name>
+      <name>CountryISOCode</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
@@ -48,7 +48,6 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-
-WS.verifyElementText(response, 'CapitalCityResponse.CapitalCityResult', 'Hanoi')</verificationScript>
+WS.verifyElementText(response, 'CountryCurrencyResponse.CountryCurrencyResult.sName', 'Dong')</verificationScript>
    <wsdlAddress>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL</wsdlAddress>
 </WebServiceRequestEntity>

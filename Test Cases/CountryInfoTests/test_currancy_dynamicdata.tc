@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>test_currancy_dynamicdata</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1baacc70-cb6e-4f72-8607-5d46fc36de75</testCaseGuid>
+   <variable>
+      <defaultValue>'AX'</defaultValue>
+      <description></description>
+      <id>9a5476bc-942e-4220-9783-508a6a3def35</id>
+      <masked>false</masked>
+      <name>CountryCode</name>
+   </variable>
+</TestCaseEntity>

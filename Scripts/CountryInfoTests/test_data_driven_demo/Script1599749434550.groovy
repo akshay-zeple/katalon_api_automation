@@ -15,17 +15,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-res1 = WS.sendRequest(findTestObject('CountryInfoService/ListCountries'))
+res1 = WS.sendRequest(findTestObject('CountryInfoService/GetCapital', [('countryISOCode') : CountryCode]))
 
-def obj = new XmlSlurper()
+WS.verifyElementText(res1, 'CapitalCityResponse.CapitalCityResult', Capital)
 
-def xmlData = obj.parseText(res1.responseBodyContent)
+res2 = WS.sendRequest(findTestObject('CountryInfoService/GetCurrancy', [('CountryISOCode') : CountryCode]))
 
-def countryCode = xmlData.ListOfCountryNamesByNameResult.tCountryCodeAndName[2].sISOCode.text()
-
-println('Extracted Country Code Is: ' + countryCode)
-
-GlobalVariable.countryISOCode = countryCode
-
-res2 = WS.sendRequestAndVerify(findTestObject('CountryInfoService/GetCountryCapital', [('countryISOCode') : GlobalVariable.countryISOCode]))
+WS.verifyElementText(res2, 'CountryCurrencyResponse.CountryCurrencyResult.sName', Currency1)
 
