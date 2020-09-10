@@ -19,7 +19,7 @@ WS.sendRequest(findTestObject('UserRestService/ListUsers'))
 
 response = WS.sendRequestAndVerify(findTestObject('UserRestService/ListUsers'), FailureHandling.STOP_ON_FAILURE)
 
-WS.verifyElementPropertyValue(response, 'data[2].first_name', 'Tobias')
+WS.verifyElementPropertyValue(response, 'data[2].first_name', 'Emma')
 
 WS.verifyElementsCount(response, 'data', 6)
 

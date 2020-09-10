@@ -4,3 +4,6 @@
 /.settings/
 /.classpath
 .svn/
+*.class
+*.swp
+Reports/
