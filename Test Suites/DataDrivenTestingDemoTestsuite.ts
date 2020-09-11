@@ -44,4 +44,25 @@
          <variableId>2e205d60-35ff-42d4-a13d-7cdf34e94153</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>f48700fd-1bfa-48ae-bccc-f52906606b47</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/UserTests/test_data_driventest_demo</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>463ca017-267b-4fa8-9ea8-60fb7706580a</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/UsernameTestData</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>463ca017-267b-4fa8-9ea8-60fb7706580a</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>username</value>
+         <variableId>6ed154af-2a52-4c00-aab0-dc7a61dd9880</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>
