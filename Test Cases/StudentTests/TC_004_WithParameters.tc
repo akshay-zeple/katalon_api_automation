@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_004_WithParameters</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>666afd5b-f4fe-4af9-951b-aa5d94b831cf</testCaseGuid>
+   <variable>
+      <defaultValue>1</defaultValue>
+      <description></description>
+      <id>135c49ad-da1c-46ce-aaa5-a5ee0688a00a</id>
+      <masked>false</masked>
+      <name>pn</name>
+   </variable>
+</TestCaseEntity>

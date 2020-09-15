@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_005_DeleteStudent</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5263730e-244d-4876-8259-2ce5331064b3</testCaseGuid>
+   <variable>
+      <defaultValue>111</defaultValue>
+      <description></description>
+      <id>d7a98236-d3aa-49c7-82ce-3ccd2c36fae7</id>
+      <masked>false</masked>
+      <name>sid</name>
+   </variable>
+</TestCaseEntity>

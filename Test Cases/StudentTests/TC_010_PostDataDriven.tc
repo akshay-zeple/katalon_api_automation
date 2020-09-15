@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_010_PostDataDriven</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4959c2b2-26df-4973-9cc5-bfee5fd7b5b8</testCaseGuid>
+   <variable>
+      <defaultValue>'API'</defaultValue>
+      <description></description>
+      <id>03fc7142-e5b7-417e-80ee-e3923874d59d</id>
+      <masked>false</masked>
+      <name>fName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Test'</defaultValue>
+      <description></description>
+      <id>62e09468-f0a5-44db-856a-c344b58cf197</id>
+      <masked>false</masked>
+      <name>mName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Project'</defaultValue>
+      <description></description>
+      <id>7daa8171-5485-4085-9044-99cbbfd6b6f6</id>
+      <masked>false</masked>
+      <name>lName</name>
+   </variable>
+   <variable>
+      <defaultValue>'9/14/2020'</defaultValue>
+      <description></description>
+      <id>b2dc8836-b719-4344-be2a-c1edcec476e3</id>
+      <masked>false</masked>
+      <name>DOB</name>
+   </variable>
+</TestCaseEntity>

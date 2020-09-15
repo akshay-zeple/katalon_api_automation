@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>CreateUser - datadrivendemo</name>
+   <name>UpdateStudentDetails</name>
    <tag></tag>
-   <elementGuidId>c485de1a-a5b4-4de3-b44b-12e597c29a9d</elementGuidId>
+   <elementGuidId>79479e91-0c4a-4dca-a47c-ccfaa3896dca</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;name\&quot;: \&quot;${username}\&quot;,\n    \&quot;job\&quot;: \&quot;leader\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;id\&quot;: \&quot;${studentID}\&quot;,\n  \&quot;first_name\&quot;: \&quot;${fName}\&quot;,\n  \&quot;middle_name\&quot;: \&quot;sample string 3\&quot;,\n  \&quot;last_name\&quot;: \&quot;sample string 4\&quot;,\n  \&quot;date_of_birth\&quot;: \&quot;sample string 5\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -24,8 +24,8 @@
    </httpHeaderProperties>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://reqres.in/api/users</restUrl>
+   <restRequestMethod>PUT</restRequestMethod>
+   <restUrl>http://thetestingworldapi.com/api/studentsDetails/${studentID}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -35,11 +35,18 @@
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>24cd78b6-b04c-42f1-ad3c-491609082778</id>
+      <masked>false</masked>
+      <name>studentID</name>
+   </variables>
+   <variables>
       <defaultValue>'Test'</defaultValue>
       <description></description>
-      <id>a429755f-2f5e-4dd7-b359-cd02425a83a1</id>
+      <id>290297db-7524-4752-b471-25460fea6f26</id>
       <masked>false</masked>
-      <name>username</name>
+      <name>fName</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
@@ -53,14 +60,6 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-
-
-WS.verifyResponseStatusCode(response, 201)
-
-assertThat(response.getStatusCode()).isEqualTo(201)
-
-
-WS.verifyElementPropertyValue(response, 'name', &quot;morpheus1&quot;)</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

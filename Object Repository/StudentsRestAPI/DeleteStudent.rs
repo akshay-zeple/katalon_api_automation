@@ -1,31 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>CreateUser - datadrivendemo</name>
+   <name>DeleteStudent</name>
    <tag></tag>
-   <elementGuidId>c485de1a-a5b4-4de3-b44b-12e597c29a9d</elementGuidId>
+   <elementGuidId>81866259-d803-4996-841e-ee0f5ee4f407</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;name\&quot;: \&quot;${username}\&quot;,\n    \&quot;job\&quot;: \&quot;leader\&quot;\n}&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
-      <type>Main</type>
-      <value>application/json</value>
-   </httpHeaderProperties>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://reqres.in/api/users</restUrl>
+   <restRequestMethod>DELETE</restRequestMethod>
+   <restUrl>http://thetestingworldapi.com/api/studentsDetails/${studentID}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -35,11 +24,11 @@
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'Test'</defaultValue>
+      <defaultValue>100</defaultValue>
       <description></description>
-      <id>a429755f-2f5e-4dd7-b359-cd02425a83a1</id>
+      <id>99fc2f0a-faec-428c-9ea3-10ffcc7861dd</id>
       <masked>false</masked>
-      <name>username</name>
+      <name>studentID</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
@@ -53,14 +42,6 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-
-
-WS.verifyResponseStatusCode(response, 201)
-
-assertThat(response.getStatusCode()).isEqualTo(201)
-
-
-WS.verifyElementPropertyValue(response, 'name', &quot;morpheus1&quot;)</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_011_RequestChaning</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>66b53b4d-a3d9-47df-af55-89137f06fcd2</testCaseGuid>
+   <variable>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>24ae9924-5d87-4968-aacb-8af1ecf82771</id>
+      <masked>false</masked>
+      <name>sID</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_008_UpdateStudentDetails</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f650639f-952c-409a-8a69-116cb45d6cd5</testCaseGuid>
+   <variable>
+      <defaultValue>'Akshay'</defaultValue>
+      <description></description>
+      <id>8d1dcec7-00f0-49d0-bbeb-81aac39fb199</id>
+      <masked>false</masked>
+      <name>fN</name>
+   </variable>
+   <variable>
+      <defaultValue>'69492'</defaultValue>
+      <description></description>
+      <id>a07c3292-72e1-4875-b22f-d5fb2c7c2304</id>
+      <masked>false</masked>
+      <name>sID</name>
+   </variable>
+</TestCaseEntity>

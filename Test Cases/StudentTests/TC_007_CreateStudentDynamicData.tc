@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_007_CreateStudentDynamicData</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4b498119-4726-457e-80dd-25bf6d2f9234</testCaseGuid>
+   <variable>
+      <defaultValue>'API'</defaultValue>
+      <description></description>
+      <id>4886cd52-4cad-4d8b-8535-855c9fc06837</id>
+      <masked>false</masked>
+      <name>fName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Test'</defaultValue>
+      <description></description>
+      <id>688a8a3d-e966-4248-9b5c-03776c2a5e0b</id>
+      <masked>false</masked>
+      <name>mName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Project'</defaultValue>
+      <description></description>
+      <id>61d30eef-46c0-4e62-bcca-b8bc8a0ba67a</id>
+      <masked>false</masked>
+      <name>lName</name>
+   </variable>
+   <variable>
+      <defaultValue>'9/14/2020'</defaultValue>
+      <description></description>
+      <id>7f076f47-f17f-46db-a6dc-883f2adba198</id>
+      <masked>false</masked>
+      <name>DOB</name>
+   </variable>
+</TestCaseEntity>

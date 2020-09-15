@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_003_FetchStudent_DynamicID</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4b21609c-9d8b-45dc-8679-5b0df9d23eac</testCaseGuid>
+   <variable>
+      <defaultValue>'111'</defaultValue>
+      <description></description>
+      <id>eade10f6-7c0c-4141-86aa-50ec3953de12</id>
+      <masked>false</masked>
+      <name>SID</name>
+   </variable>
+</TestCaseEntity>

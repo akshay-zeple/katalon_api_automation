@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_009_GetDataDriven</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5a2ba9ce-6a2a-4442-905b-044b35418820</testCaseGuid>
+   <variable>
+      <defaultValue>5000</defaultValue>
+      <description></description>
+      <id>cd2b89c6-7efe-4f47-b80b-c20b4d1fe039</id>
+      <masked>false</masked>
+      <name>ID</name>
+   </variable>
+</TestCaseEntity>
